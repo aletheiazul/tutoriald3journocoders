@@ -1,6 +1,10 @@
 La sesión de noviembre de 2015 de [#periodismodatos](http://medialab-prado.es/article/periodismo_de_datos_-_grupo_de_trabajo) acoge la primera actividad de [@JournocodersMAD](https://twitter.com/journocodersmad) y del recién creado [Madrid D3.js](http://www.meetup.com/es/Madrid-D3-js/). El formato del encuentro de *Journocoders* es el de un encuentro de periodistas interesadxs en aprender programación mientras comparten trucos y consejos prácticos de código y siguen y actualizan pequeños tutoriales. Para esta ocasión nos acompañarán lxs miembrxs de *Madrid D3.js*
 
-Para este primer encuentro se sigue el tutorial [Let's make a bar chart](http://bost.ocks.org/mike/bar/) (hagamos un gráfico de barras) del creador de [D3.js](http://www.d3js.org), [Mike Bostock](http://bost.ocks.org/mike/), con el que crearemos un gráfico de barras muy sencillo.
+Para este primer encuentro, [Adrián Blanco Ramos](https://github.com/adrianblanco/), creador y dinamizador de *JournocodersMAD* ha realizado un [tutorial](https://github.com/adrianblanco/tutoriald3journocoders), en el que se basa este texto, que sigue el tutorial [Let's make a bar chart](http://bost.ocks.org/mike/bar/) (hagamos un gráfico de barras) del creador de [D3.js](http://www.d3js.org), [Mike Bostock](http://bost.ocks.org/mike/), con el que se consigue un gráfico de barras muy sencillo conjugando *D3*, *HTML* y *CSS*.
+
+Hemos contado, además, con la ayuda experta de lxs promotorxs del recién creado [meetup MADRID D3.js](http://www.meetup.com/es/Madrid-D3-js/), Fernando Blat ([@ferblape](https://www.twitter.com/ferblape)) y Beatriz Martínez ([@maritrinez](https://www.twitter.com/maritrinez)).
+
+Adrián creo un [hackpad](https://journocodersmadrid.hackpad.com/JournocodersMad-noviembre-2015-Q9TmZSpvzlN) para que compartir notas sobre el evento
 
 # Consideraciones previas
 
