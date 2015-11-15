@@ -90,19 +90,23 @@ Ahora podemos comprobar que funciona el servidor web que hemos lanzado, para lo 
 
 ## Ruta *JS*
 
-Para actuar con la librería *D3js* debemos enlazarla desde el documento *HTML*. Se puede hacer de dos maneras:
+Para actuar con la librería *D3js* debemos enlazarla desde el documento *HTML*. En ambos casos este código se inserta en la cabecera del documento *HTML*, en el elemento `head`. Se introduce la ruta a la librería *D3.js* en el atributo `src` del elemento `script`.
 
--   Descargar la librería y enlazar la librería con una ruta local. Esto nos permite conocer cómo actúa la librería y además no necesitamos conexión a Internet para ver los resultados. Para ello nos descargamos [el zip](https://github.com/mbostock/d3/releases/download/v3.5.8/d3.zip) desde la página de [D3js](https://d3js.org), lo descomprimimos en el directorio de trabajo o en otro que sepamos y lo enlazamos.
+Se puede hacer de dos maneras:
+
+### Descargar la librería
+
+Descargar la librería y enlazar la librería con una ruta local. Esto nos permite conocer cómo actúa la librería y además no necesitamos conexión a Internet para ver los resultados. Para ello nos descargamos [el zip](https://github.com/mbostock/d3/releases/download/v3.5.8/d3.zip) desde la página de [D3js](https://d3js.org), lo descomprimimos en el directorio de trabajo o en otro que sepamos y lo enlazamos.
 
     <script src="ruta/d3.min.js"></script>
 
--   Enlazar la librería desde Internet. En este caso no tenemos que descargarla y nos facilita el trabajo y funcionará siempre que esté conectado a Internet:
+### Enlazar la librería de Internet
+
+Enlazar la librería desde Internet. En este caso no tenemos que descargarla y nos facilita el trabajo y funcionará siempre que esté conectado a Internet:
 
     <script src="http://d3js.org/d3.v3.min.js"></script>
 
 En el manual original, la ruta no lleva `http:`, lo cual hace que puede que no funcione, mejor especificar el protocolo utilizado en la *URL*.
-
-En ambos casos este código se inserta en la cabecera del documento *HTML*, en el elemento `head`. Se introduce la ruta a la librería *D3.js* en el atributo `src` del elemento `script`.
 
 ## Estilos
 
@@ -119,7 +123,9 @@ Para darle una forma a las barras, este ejemplo utiliza *CSS*, por lo que debemo
 
 Al igual que con el código *JS*, se puede operar de dos maneras:
 
--   Incrustar el código en el *HTML* a través del elemento `style` dentro del elemento `head`:
+### Incrustar HTML
+
+Incrustar el código en el *HTML* a través del elemento `style` dentro del elemento `head`:
 
     <style type="text/css">
           .chart div {
@@ -132,9 +138,13 @@ Al igual que con el código *JS*, se puede operar de dos maneras:
          }
        </style>
 
--   Crear un archivo *CSS* y enlazarlo desde el elemento `link` dentro del elemento `head`:
+### Enlazar CSS
+
+Crear un archivo *CSS* y enlazarlo desde el elemento `link` dentro del elemento `head`:
 
     <link rel="stylesheet" href="ruta/archivo.css">
+
+### Personalizar el estilo
 
 Se puede personalizar el estilo:
 
