@@ -1,44 +1,13 @@
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#orgheadline7">1. Consideraciones previas</a>
-<ul>
-<li><a href="#orgheadline1">1.1. Servidor Web</a></li>
-<li><a href="#orgheadline6">1.2. Servidor web con <i>NodeJS</i></a>
-<ul>
-<li><a href="#orgheadline2">1.2.1. Descarga</a></li>
-<li><a href="#orgheadline3">1.2.2. Instalación de <i>NodeJS</i></a></li>
-<li><a href="#orgheadline4">1.2.3. Instalación de <i>node-static</i></a></li>
-<li><a href="#orgheadline5">1.2.4. Configuración</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#orgheadline13">2. Cómo generar un gráfico de barras en D3</a>
-<ul>
-<li><a href="#orgheadline8">2.1. Crear esqueleto <i>HTML</i></a></li>
-<li><a href="#orgheadline9">2.2. Ruta <i>JS</i></a></li>
-<li><a href="#orgheadline10">2.3. Estilos</a></li>
-<li><a href="#orgheadline11">2.4. Script con datos</a></li>
-<li><a href="#orgheadline12">2.5. El código final</a></li>
-</ul>
-</li>
-<li><a href="#orgheadline14">3. Próximos pasos</a></li>
-</ul>
-</div>
-</div>
-
 La sesión de noviembre de 2015 de [#periodismodatos](http://medialab-prado.es/article/periodismo_de_datos_-_grupo_de_trabajo) acoge la primera actividad de [@JournocodersMAD](https://twitter.com/journocodersmad) y del recién creado [Madrid D3.js](http://www.meetup.com/es/Madrid-D3-js/). El formato del encuentro de *Journocoders* es el de un encuentro de periodistas interesadxs en aprender programación mientras comparten trucos y consejos prácticos de código y siguen y actualizan pequeños tutoriales. Para esta ocasión nos acompañarán lxs miembrxs de *Madrid D3.js*
 
 Para este primer encuentro se sigue el tutorial [Let's make a bar chart](http://bost.ocks.org/mike/bar/) (hagamos un gráfico de barras) del creador de [D3.js](http://www.d3js.org), [Mike Bostock](http://bost.ocks.org/mike/), con el que crearemos un gráfico de barras muy sencillo.
 
-# Consideraciones previas<a id="orgheadline7"></a>
+# Consideraciones previas
 
 -   ¿Tienes un buen editor de texto? Es el programa que se utiliza para editar el *HTML*, *CSS* y *JS* que producirá el gráfico de barras. Si no lo tienes, mira este [artículo](http://s.coop/1wxqj).
 -   ¿Tienes un servidor web? Es el programa que permitirá que no tengas que subir tu trabajo a un servidor web de la Web, que puedas comprobar que funciona en tu propio ordenador.
 
-## Servidor Web<a id="orgheadline1"></a>
+## Servidor Web
 
 Hay varias opciones:
 
@@ -47,17 +16,17 @@ Hay varias opciones:
 -   Si utilizas *GNU/Linux*, probablemente ya uses *Apache*
 -   *NodeJS*, con el paquete *node-static*
 
-## Servidor web con *NodeJS*<a id="orgheadline6"></a>
+## Servidor web con *NodeJS*
 
-### Descarga<a id="orgheadline2"></a>
+### Descarga
 
 <https://nodejs.org/en/>
 
-### Instalación de *NodeJS*<a id="orgheadline3"></a>
+### Instalación de *NodeJS*
 
 Según la plataforma
 
-### Instalación de *node-static*<a id="orgheadline4"></a>
+### Instalación de *node-static*
 
 Abrimos la terminal y tecleamos:
 
@@ -65,7 +34,7 @@ Abrimos la terminal y tecleamos:
 
 La opción `-g` es para hacerlo de forma global.
 
-### Configuración<a id="orgheadline5"></a>
+### Configuración
 
 Para lanzar el servidor web debemos ir con la terminal en el mismo directorio en el que está el documento de trabajo:
 
@@ -83,9 +52,9 @@ Si en el navegador ponemos `http://localhost:8080` veremos el `index.html` que t
 
 Atención: no cierres esta ventana de la terminal o cerrarás el servidor web.
 
-# Cómo generar un gráfico de barras en D3<a id="orgheadline13"></a>
+# Cómo generar un gráfico de barras en D3
 
-## Crear esqueleto *HTML*<a id="orgheadline8"></a>
+## Crear esqueleto *HTML*
 
 Primero vamos a crear un documento *HTML* base que posteriormente modificaremos.
 
@@ -115,7 +84,7 @@ Primero vamos a crear un documento *HTML* base que posteriormente modificaremos.
 
 Ahora podemos comprobar que funciona el servidor web que hemos lanzado, para lo cual hemos de escribir en el navegador favorito `http://localhost:8080`, que nos mostrará un texto que diga `Hola`
 
-## Ruta *JS*<a id="orgheadline9"></a>
+## Ruta *JS*
 
 Para actuar con la librería *D3js* debemos enlazarla desde el documento *HTML*. Se puede hacer de dos maneras:
 
@@ -131,7 +100,7 @@ En el manual original, la ruta no lleva `http:`, lo cual hace que puede que no f
 
 En ambos casos este código se inserta en la cabecera del documento *HTML*, en el elemento `head`. Se introduce la ruta a la librería *D3.js* en el atributo `src` del elemento `script`.
 
-## Estilos<a id="orgheadline10"></a>
+## Estilos
 
 Para darle una forma a las barras, este ejemplo utiliza *CSS*, por lo que debemos enlazar el siguiente código:
 
@@ -180,7 +149,7 @@ Por ejemplo:
       color: white;
       }
 
-## Script con datos<a id="orgheadline11"></a>
+## Script con datos
 
 Los datos los introducimos a través de *JS*, con el elemento `script` dentro de `body`:
 
@@ -207,7 +176,7 @@ Además de los datos, se declara el dominio con `.domain()` y el rango con `.ran
     
      </script>
 
-## El código final<a id="orgheadline12"></a>
+## El código final
 
     <!DOCTYPE html>
     <html>
@@ -255,7 +224,7 @@ Además de los datos, se declara el dominio con `.domain()` y el rango con `.ran
 
 Puedes ver el resultado en este link: <http://bl.ocks.org/adrianblanco/da9fed51f09ee1ec0724>
 
-# Próximos pasos<a id="orgheadline14"></a>
+# Próximos pasos
 
 -   Ésta es sólo la primera parte para generar un gráfico de barras en D3.
 -   Puedes continuar con [Let's Make a Bar Chart II](http://bost.ocks.org/mike/bar/2/), donde se introducen los *SVG*, un concepto clave en D3.js, y [Let's Make a Bar Chart III](http://bost.ocks.org/mike/bar/3/).
